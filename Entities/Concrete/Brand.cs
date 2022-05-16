@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +11,8 @@ namespace Entities.Concrete
     {
         //Brand-->Id,Name
         public int BrandId { get; set; }
-        public string BrandName { get; set; }
 
+        public string Name { get; set; }
 
     }
 }
