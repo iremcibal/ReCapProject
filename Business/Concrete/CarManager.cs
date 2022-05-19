@@ -1,4 +1,4 @@
-﻿using Business.Abstract;
+using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -31,6 +31,7 @@ namespace Business.Concrete
         {
             _carDal.Delete(car);
             return new SuccessResult(Messages.CarDeleted);
+
         }
 
         public IDataResult<List<Car>> GetAll()
@@ -58,7 +59,6 @@ namespace Business.Concrete
             _carDal.Update(car);
             return new SuccessResult(Messages.CarUpdated);
         }
-
 
     }
 }

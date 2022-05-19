@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -19,7 +20,6 @@ namespace Business.Concrete
         {
             _brandDal = brandDal;
         }
-
         public IResult Add(Brand brand)
         {
             _brandDal.Add(brand);
