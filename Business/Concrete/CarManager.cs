@@ -31,7 +31,6 @@ namespace Business.Concrete
         {
             _carDal.Delete(car);
             return new SuccessResult(Messages.CarDeleted);
-
         }
 
         public IDataResult<List<Car>> GetAll()

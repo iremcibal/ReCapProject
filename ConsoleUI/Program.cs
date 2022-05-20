@@ -9,7 +9,14 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            carTest();
+            UserManager userManager = new UserManager(new EfUserDal());
+
+            foreach(var user in userManager.GetAll().Data)
+            {
+                Console.WriteLine(user.FirstName);
+            }
+
+            //carTest();
 
             //brandTest();
 
@@ -39,8 +46,7 @@ namespace ConsoleUI
         private static void carTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-
-
+          
             foreach (var car in carManager.GetCarDetails().Data)
             {
                 Console.WriteLine(car.BrandName + " -- " + car.CarName + " -- " + car.ColorName + " -- " + car.DailyPrice);
