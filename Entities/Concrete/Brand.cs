@@ -10,8 +10,14 @@ namespace Entities.Concrete
     public class Brand : IEntity 
     {
         //Brand-->Id,Name
-        public int BrandId { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
+
+
+
+
+
+
 
     }
 }

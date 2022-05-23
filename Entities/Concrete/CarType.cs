@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-    public class Color : IEntity 
+    public class CarType : IEntity
     {
-        //Color-->Id,Name
         public int Id { get; set; }
         public string Name { get; set; }
-
-
-
     }
 }
