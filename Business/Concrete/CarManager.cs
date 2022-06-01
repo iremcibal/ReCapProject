@@ -1,3 +1,4 @@
+
 ﻿using Business.Abstract;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
@@ -23,7 +24,7 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-
+        
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
@@ -64,7 +65,6 @@ namespace Business.Concrete
             _carDal.Update(car);
             return new SuccessResult(Messages.CarUpdated);
         }
-
 
     }
 }
