@@ -1,3 +1,4 @@
+
 ﻿using Business.Abstract;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
@@ -22,6 +23,15 @@ namespace Business.Concrete
         public CarManager(ICarDal carDal)
         {
             _carDal = carDal;
+        }
+        
+        [ValidationAspect(typeof(CarValidator))]
+        public IResult Add(Car car)
+        {
+            //ValidationTool.Validate(new CarValidator(),car);
+
+            _carDal.Add(car);
+            return new SuccessResult(Messages.CarAdded);
         }
 
         [ValidationAspect(typeof(CarValidator))]
