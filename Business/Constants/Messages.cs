@@ -52,5 +52,9 @@ namespace Business.Constants
 
         internal static string InvalidRental = "Kiralanacak Araba Başka Müşteride";
 
+        internal static string AddedCarImage;
+        internal static string DeletedCarImage;
+        internal static string CarImageUpdated;
+
     }
 }

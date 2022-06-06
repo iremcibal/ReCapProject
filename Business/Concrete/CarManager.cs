@@ -34,6 +34,15 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarAdded);
         }
 
+        [ValidationAspect(typeof(CarValidator))]
+        public IResult Add(Car car)
+        {
+            //ValidationTool.Validate(new CarValidator(),car);
+
+            _carDal.Add(car);
+            return new SuccessResult(Messages.CarAdded);
+        }
+
         public IResult Delete(Car car)
         {
             _carDal.Delete(car);
@@ -65,6 +74,7 @@ namespace Business.Concrete
             _carDal.Update(car);
             return new SuccessResult(Messages.CarUpdated);
         }
+
 
     }
 }
