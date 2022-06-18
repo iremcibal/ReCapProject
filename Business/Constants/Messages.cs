@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,5 +55,11 @@ namespace Business.Constants
         internal static string AddedCarImage;
         internal static string DeletedCarImage;
         internal static string CarImageUpdated;
+        internal static string AccessTokenCreated;
+        internal static string UserAlreadyExists;
+        internal static string SuccessfulLogin;
+        internal static User PasswordError;
+        internal static User UserNotFound;
+        internal static string UserRegistered;
     }
 }

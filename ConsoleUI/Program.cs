@@ -9,12 +9,12 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            UserManager userManager = new UserManager(new EfUserDal());
+            //UserManager userManager = new UserManager(new EfUserDal());
 
-            foreach(var user in userManager.GetAll().Data)
-            {
-                Console.WriteLine(user.FirstName);
-            }
+            //foreach(var user in userManager.GetAll().Data)
+            //{
+            //    Console.WriteLine(user.FirstName);
+            //}
 
             //carTest();
 
