@@ -6,8 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+
   </ItemGroup>
 
   <ItemGroup>
@@ -20,4 +22,8 @@
     <Folder Include="wwwroot\Uploads\Images\" />
   </ItemGroup>
 
+
+  
+  
+  
 </Project>

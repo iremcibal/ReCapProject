@@ -38,6 +38,7 @@ namespace WebAPI
             services.AddControllers();
 
 
+
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -55,6 +56,9 @@ namespace WebAPI
                         };
                     });
             ServiceTool.Create(services);
+
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,7 +73,9 @@ namespace WebAPI
 
             app.UseRouting();
 
+
             app.UseAuthentication();
+
 
             app.UseAuthorization();
 

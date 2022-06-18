@@ -1,4 +1,4 @@
-﻿using Core.Entities.Concrete;
+using Core.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,5 +61,6 @@ namespace Business.Constants
         internal static User PasswordError;
         internal static User UserNotFound;
         internal static string UserRegistered;
+
     }
 }
